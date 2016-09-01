@@ -1,0 +1,241 @@
+/******************************************************************************
+ * Portfolio
+ * author:      Sophia Goreczky <sag238@cornell.edu>
+ * modified:    24 May 2015
+ *****************************************************************************/
+
+ /**********************
+ * Formatting
+ **********************/
+body{
+    background-color: #FFFFFF;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0px;
+}
+
+p, ul{
+	font-size: 17px;
+}
+
+p#name{
+	font-family: Courier, Helvetica, sans-serif;
+	font-size: 36px;
+}
+
+a{
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #086CA2;
+	font-size: 18px;
+}
+
+a:hover{
+	color: #f3aa8c;
+}
+
+a.nav{
+	font-family: Courier, Helvetica, sans-serif;
+	font-size: 20px;
+	display: block;
+	float: left;
+	padding-top: 10px;
+	padding-left: 30px;
+	text-decoration: underline;
+}
+
+a.nav.selected{
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a.contact{
+	display: block;
+}
+
+#navigation{
+	display: block;
+	position: fixed;
+	width:100%;
+	height: 40px;
+	background-color: #f8f3f6;
+/* 	background-color: #fef9fc; */
+/* 	background-color: #e2f5f8; */
+/* 	background-color: #e6eafd; */
+/* 	background-color: #ffe7df; */
+}
+
+#main{
+	float:left;
+	padding: 5px 10px 5px 10px;
+    display: block;
+    margin-top: 10px;
+    width: 55%;
+    min-width:300px;
+}
+
+#bio{
+	display: block;
+	position: fixed;
+	float: right;
+	width: 41%;
+	right: 0px;
+	min-width: 120px;
+	text-align: center;
+	margin-top: 100px;
+}
+
+.container{
+	margin-top: 50px;
+}
+
+.content{
+	padding: 5px 0px 5px 0px;
+}
+
+
+/**********************
+ * Images
+ **********************/
+ .robot{
+	display: block;
+	position: fixed;
+	right: 0px;
+	bottom: 0px;
+	width: 40%;
+	z-index: -1;
+}
+
+.sprite{
+	background: url(../images/sprites.png) no-repeat;
+	float:left;
+	display: block;
+/* 	margin-right: 30px; */
+	width: 80px;
+	height: 80px;
+}
+
+.sophia{
+	background-position: -100px 0;
+}
+
+.led{
+/* 	background-position: 0 -100px ; */
+	background-position: -100px -100px ;
+}
+
+.bug{
+/* 	background-position: 0 -200px ; */
+	background-position: -100px -200px ;
+}
+
+.school{
+/* 	background-position: 0 -300px ; */
+	background-position: -100px -300px ;
+}
+
+/**********************
+ * Responsive
+ **********************/
+@media (max-width : 550px) {
+	.robot{
+		display: block;
+		position: absolute;
+		top: 40px;
+		width: 40%;
+	}
+
+	a.contact{
+		position: relative;
+		display: inline;
+		padding-right: 6px;
+	}
+
+	.container{
+		margin-top:0px;
+	}
+
+	#navigation{
+		position: relative;
+	}
+
+	#main{
+		display: block;
+		float:none;
+		width: 100%;
+		margin-top:0%;
+		border: none;
+		min-width:0px;
+		padding:0px;
+	}
+
+	#bio{
+		margin-top:0px;
+		text-align: left;
+		display: block;
+		float:none;
+		width:100%;
+		padding-bottom:5%;
+		padding-left:5%;
+		position: relative;
+	}
+}
+
+@media only screen and (max-device-width: 480px) {
+	.robot{
+		display: block;
+		position: relative;
+		width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+	}
+
+	a.contact{
+		position: relative;
+		display: inline;
+		padding-right: 6px;
+	}
+
+  a.nav{
+    font-size: 60px;
+  }
+
+  .container{
+    margin-top:0px;
+  }
+
+  .sprite{
+    display: none;
+  }
+
+	#navigation{
+		position: relative;
+    height:100px;
+	}
+
+	#main{
+		display: block;
+		float:none;
+		width: 100%;
+		margin-top:0%;
+		border: none;
+		min-width:0px;
+		padding:0px;
+	}
+
+	#bio{
+		margin-top:0px;
+		text-align: center;
+		display: block;
+		float:none;
+		width:100%;
+		padding-bottom:5%;
+		position: relative;
+	}
+
+  p#name{
+    font-size: 60px;
+  }
+
+  a.contact{
+   font-size: 50px;
+ }
+}
