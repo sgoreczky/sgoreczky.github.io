@@ -1,7 +1,7 @@
 /******************************************************************************
  * Portfolio
- * author:      Sophia Goreczky <sag238@cornell.edu>
- * modified:    24 May 2015
+ * author:      Sophia Goreczky
+ * modified:    14 June 2018
  *****************************************************************************/
 
  /**********************
@@ -15,127 +15,68 @@ body{
 
 p, ul{
 	font-size: 17px;
+  line-height: 25px;
 }
 
 p#name{
 	font-family: Courier, Helvetica, sans-serif;
 	font-size: 36px;
-}
-
-a{
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	color: #086CA2;
-	font-size: 18px;
-}
-
-a:hover{
-	color: #f3aa8c;
-}
-
-a.nav{
-	font-family: Courier, Helvetica, sans-serif;
-	font-size: 20px;
-	display: block;
-	float: left;
-	padding-top: 10px;
-	padding-left: 30px;
-	text-decoration: underline;
-}
-
-a.nav.selected{
-	font-weight: bold;
-	text-decoration: none;
-}
-
-a.contact{
-	display: block;
+  text-align: center;
+  margin-bottom: 15px;
 }
 
 #navigation{
-	display: block;
-	position: fixed;
-	width:100%;
-	height: 40px;
-	background-color: #f8f3f6;
-/* 	background-color: #fef9fc; */
-/* 	background-color: #e2f5f8; */
-/* 	background-color: #e6eafd; */
-/* 	background-color: #ffe7df; */
+  text-align: center;
 }
 
-#main{
-	float:left;
-	padding: 5px 10px 5px 10px;
-    display: block;
-    margin-top: 10px;
-    width: 55%;
-    min-width:300px;
+.center{
+  width: 65%;
+  max-width: 800px;
+  margin: auto;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-content: center;
+  align-content: center;
 }
 
-#bio{
-	display: block;
-	position: fixed;
-	float: right;
-	width: 41%;
-	right: 0px;
-	min-width: 120px;
-	text-align: center;
-	margin-top: 100px;
+.blur{
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.5);
 }
 
-.container{
-	margin-top: 50px;
+.contact{
+  font-size: 2em;
 }
-
-.content{
-	padding: 5px 0px 5px 0px;
-}
-
 
 /**********************
  * Images
  **********************/
+.image{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin:auto;
+}
+
  .robot{
 	display: block;
-	position: fixed;
-	right: 0px;
 	bottom: 0px;
-	width: 40%;
+	width: 10%;
 	z-index: -1;
+  margin: auto;
 }
 
-.sprite{
-	background: url(../images/sprites.png) no-repeat;
-	float:left;
-	display: block;
-/* 	margin-right: 30px; */
-	width: 80px;
-	height: 80px;
+.svg{
+  width:100%;
+  position: absolute;
+  z-index: -1;
 }
-
-.sophia{
-	background-position: -100px 0;
-}
-
-.led{
-/* 	background-position: 0 -100px ; */
-	background-position: -100px -100px ;
-}
-
-.bug{
-/* 	background-position: 0 -200px ; */
-	background-position: -100px -200px ;
-}
-
-.school{
-/* 	background-position: 0 -300px ; */
-	background-position: -100px -300px ;
-}
-
 /**********************
  * Responsive
  **********************/
-@media (max-width : 550px) {
+/* @media (max-width : 550px) {
 	.robot{
 		display: block;
 		position: absolute;
@@ -238,4 +179,4 @@ a.contact{
   a.contact{
    font-size: 50px;
  }
-}
+} */

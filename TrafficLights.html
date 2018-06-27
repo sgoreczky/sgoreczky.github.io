@@ -1,0 +1,91 @@
+<!--Hi! Yes, I did build this site, too! Knowing how the medium you design for works is important-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>Sophia Goreczky</title>
+	<link type= "text/css" rel="stylesheet" href="style/portfolio.css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-26005830-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
+
+</head>
+
+<body>
+	<p id="name">Sophia Goreczky</p>
+	<div id="navigation">
+		<a title="go home" href="index.html"><i class="fas fa-home"></i> back home</a>
+	</div>
+	<object class="svg" type="image/svg+xml" data="images/background-long.svg" style="width:100%">
+  	Your browser does not support SVGs
+	</object>
+
+	<div class="center blur">
+		<h2>Case Study: Traffic Light Simulation</h2>
+		<p>This is a case study for a company that has been anonymized and exercised interaction design skillset. I spent 1.5 days on this part of the project.</p>
+
+		<h3>Interaction Design Challenge Statement</h3>
+		<p>Imagine you are a traffic engineer with complete control over the 4 standard traffic lights (Red / Yellow / Green) at a 4-way intersection. (Assume also that the intersection does not allow left-hand turns. In other words, traffic can only travel straight across the intersection in both directions). Design a web-based GUI for you as the traffic engineer to manipulate the timing of each of these 4 co-dependent traffic lights and the transition between each light's three "states" (R/Y/G).</p>
+
+		<h3>Initial Research and Explorations</h3>
+		<p>Here I'm exploring what the problem scope means and if I need to account for any additional variables. I also make note that the persona is a <span style=" font-weight: bold;">traffic engineer, not a software developer.</span> I know that the solution involves at least two affordances: one to manipulate the timing of the color states and one to manipulate the time between lights.</p>
+		<a target="_blank" class="image" href="images/traffic/notes-large.JPG"><img class="image" src="images/traffic/notes.JPG" alt="Handwritten notes describing Sophia's research of the problem statement." /></a>
+		<p>This is a finite state machine that I find in my research that helps me understand how the traffic light states depend on each other. I also start jotting down my own logic exercise and these leads to <span style=" font-weight: bold;">reducing the problem from 4 individual lights to 2</span>. Because there are no left turns, there is no need to control each of the 4 lights. To remove as much assumption and bias from my understanding of the problem, I talk about it with different people from diverse backgrounds to see if they understand the problem in the same way. Of course, they never do and that's the magic of diversity and getting that input in early.</p>
+		<a target="_blank" class="image" href="images/traffic/finiteStateMachine-large.JPG"><img class="image" src="images/traffic/finiteStateMachine.JPG" alt="Handwritten notes showing Sophia's finite state machine describing a traffic light" /></a>
+		<p>Using Balsamiq, I make the first wireframe. While I'm making it, I start with 3 inputs (Red (R), Yellow (Y), Green (G)) for each of the two lights (North South (NS), East West (EW)). I also make a block visualization which is how I make sense of the interconnectedness of NS Red equaling EW Yellow and Green. From real world experience, we know that an intersection may be all red for an additional couple of seconds in order to avoid accidents. I call this period the "buffer (B)." This makes up the building blocks for the traffic simulation.</p>
+		<p>For the simulation section, I keep it simple and show an intersection with cars. Displaying which traffic light corresponds to NS and EW is difficult in 2D so I opt for making a simple rectangle where the light would be in reality that will change with the corresponding traffic light color. This has the additional benefit of possibly extending this problem outside of this basic 2 light intersection because each of the 4 lights is represented. The building blocks from the first section are now stacked to show the current and future progress of the lights. There is an affordance to start and end the simulation. You can also choose which direction gets to be green first.</p>
+		<a target="_blank" class="image" href="images/traffic/iteration1.png"><img class="image" src="images/traffic/iteration1.png" alt="Sophia's first wireframe" /></a>
+
+		<h3>User Test</h3>
+		<p>Working under limited time does not excuse user testing, even if I have no access to a traffic engineer. I pick a friend that hadn't been briefed on my intial thoughts on this project. He picks up on the dependancy of NS Red and EW Yellow and EW Green quickly with the solid line linking the inputs. He gets <span style=" font-weight: bold;">confused by the dotted lines and the locks</span>. He points out liking the block section and wanting to be able to manipulate the blocks.</p>
+		<p>In reality, the two lines that confused him represent the same relationship but I had chosen different line styles to differentiate the dependencies. The locks were meant to show which side of the dependancy the user could manipulate while the corresponding fields were automatically calculated. I conduct another, more informal user test, and the same confusions emerge.</p>
+
+		<h3>Iterations</h3>
+		<a target="_blank" class="image" href="images/traffic/iterations2and3.png"><img class="image" src="images/traffic/iterations2and3.png" alt="Sophia's second and third iterations" /></a>
+		<p>Iteration 2 is a direct response to the user test findings. I want to simplify the problem. Users kept talking about the blocks so I get rid of the input area and merge it directly on the blocks. I'm already happier with this design because it removes the data repetition that had been annoying me about Iteration 1. Iteration 3 takes the building block repetition and tries to merge directly into the simulation area.</p>
+
+		<h3>Solution</h3>
+		<p><span style=" font-weight: bold;">Three iterations later, I believe Iteration 2 is the best route forward. Iteration 1 has too much repetition and  Iteration 3 is trying to communicate too much at one time. This design needs more understanding of the traffic engineer persona to be optimally useful.</span></p>
+		<a target="_blank" class="image" href="images/traffic/solution-stop.png"><img class="image" src="images/traffic/solution-stop.png" alt="Sophia's solution in stopped state" /></a>
+		<a target="_blank" class="image" href="images/traffic/solution-run.png"><img class="image" src="images/traffic/solution-run.png" alt="Sophia's solution in run state" /></a>
+
+		<h3>Specifications</h3>
+		<p>
+			<ul>
+				<li>North-South (NS) traffic lights are treated as identically timed. Same with East-West (EW) lights.</li>
+				<li>Important to use more than just color to communicate information to meet 508 accessibility compliance.</li>
+				<li>Details Section</li>
+					<ul>
+						<li>Clicking in a bar allows you to type in the time for that light (R, Y, G) state</li>
+						<li>The interdependent bars should dynamically adjust to the changes made.</li>
+						<li>The Buffer (B) blocks represent the overlap time that all lights are Red. This should be used to give leeway to accidental red light runners.</li>
+						<li>Total cycle time is computed by adding the total number of seconds in NS or EW red, yellow, green states + twice the buffer time.</li>
+						<li>It is illegal for any state to be 0.</li>
+						<li>It is legal to remove the buffer time (using the checkbox affordance)</li>
+						<li>State rectangles should have a min width to fit their labels and their edit field states.</li>
+					</ul>
+				<li>Simulation Section</li>
+					<ul>
+						<li>The simulation begins when "Run" is selected. Stops and resets when "Stop" is pressed. "Pause" might be a use case but I have nothing to support that so I will exclude.</li>
+						<li>Green First affordance determines which road gets to start the simulation with the first green.</li>
+						<li>The bars will scroll as the simulation starts to show what to expect looking into the next cycles.</li>
+						<li>The cross shows the stoplights as rectangles that will change color as the simulation progresses. The color will match the state of the scrolling bars.</li>
+						<li>Car icons will also match the color of the state of the traffic light.</li>
+					</ul>
+			</ul>
+		</p>
+
+		<p></p>
+	</div>
+
+
+</body>
+</html>

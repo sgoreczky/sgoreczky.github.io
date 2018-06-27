@@ -1,9 +1,11 @@
+<!--Hi! Yes, I did build this site, too! Knowing how the medium you design for works is important-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
 	<title>Sophia Goreczky</title>
 	<link type= "text/css" rel="stylesheet" href="style/portfolio.css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -13,60 +15,51 @@
 
 	  ga('create', 'UA-26005830-1', 'auto');
 	  ga('send', 'pageview');
-
 	</script>
 
 </head>
 
 <body>
-	<div id="bio">
-		<p id="name">Sophia Goreczky</p>
-		<a class="contact" target="blank" title="LinkedIn" href="https://www.linkedin.com/in/sophiagoreczky">LinkedIn</a>
-		<a class="contact" target="blank" title="Resume" href="SophiaGoreczkyResume.pdf">R&#233;sum&#233;</a>
-		<a class="contact" href="mailto:s.goreczky@gmail.com">Contact</a>
-	</div>
+	<p id="name">Sophia Goreczky</p>
+
 	<div id="navigation">
-			<a class="nav selected" href="index.html">About</a>
-			<a class="nav" href="portfolio.html">Portfolio</a>
-	</div>
-	<div id="main">
-		<table class="container">
-			<tr>
-			<td><div id="sophia" title="Sophia" class="sprite sophia"></div></td>
-			<td><div id="sophia-content" class="content">
-				<h2>Me</h2>
-				<p>My design philosophy always starts with a well-defined problem.</p>
-				<p>As a user experience designer, I spend a majority of my time solving high volume data problems to create a UI that is informative without being overwhelming. I focus on functionality challenges while still creating an aesthetically pleasing product.</p>
-				<p>I think like a programmer but empathize with the people using my products. I make it a priority to advocate for their needs. My designs address these needs while remaining within the technical limitations of the project.</p>
-				<p>I tend to talk about space, robots, and data a lot.</p>
-			</div></td>
-			</tr>
-			<tr>
-			<td><div id="cornell" title="Education" class="sprite school"></div></td>
-			<td><div id="cornell-content" class="content">
-				<h2>Education</h2>
-				<p>I graduated from Cornell's Engineering school with an independent major
-				focusing on Computer Science and Human-Computer Interaction. I was a member of
-				two engineering project teams: Cornell Minesweeper and Cornell Mars Rover.</p>
-			</div></td>
-			</tr>
-			<tr>
-				<td><div id="coverity" title="Coverity" class="sprite bug"></div></td>
-				<td><div id="coverity-content" class="content">
-					<h2>Work</h2>
-					<p>
-					I work at <a href="http://www.coverity.com/products/" target="blank">Coverity (Acquired by Synopsys)</a>. We help people find bugs in their code via static analysis and I
-					design the products that help them figure out what to do next. At Coverity, our goal is to help people catch and fix bugs in their code during the development cycle.
-					</p>
-					<p>
-					Over the past year, I have transitioned to working on a SaaS software integrity solution. Previously, I spent a majority of three years working on the Coverity Connect UI. Connect is the UI for our static analysis results. Users get a list of issues found in their code base
-					and can view the related source code to understand why those issues are a problem to begin with. These issues can then be triaged so that a developer can resolve the problem.
-					</p>
-					</div></td>
-			</tr>
-		</table>
+		<a class="contact" target="blank" title="Resume" href="SophiaGoreczkyResume.pdf"><i class="fas fa-smile"></i></a>
+		<a class="contact" title="Contact" href="mailto:s.goreczky@gmail.com"><i class="fas fa-envelope-square"></i></a>
+		<a class="contact" target="blank" title="LinkedIn" href="https://www.linkedin.com/in/sophiagoreczky"><i class="fab fa-linkedin"></i></a>
 	</div>
 
-	<img src="images/robot.jpg" class="robot" alt="robot" />
+	<object class="svg" type="image/svg+xml" data="images/background.svg" style="width:100%">
+  	Your browser does not support SVGs
+	</object>
+
+	<div class="center blur">
+
+		<div id="introduction">
+			<h2>About</h2>
+			<p>I am a problem solver that enjoys breaking down barriers and complexity to help people out. I make the complex accessible by deeply understanding the problem and breaking it down into its simplest form.</p>
+			<p>I spent some time during Cornell building <a target="blank" title="Sophia's rapid prototying YouTube channel" href="http://www.youtube.com/playlist?list=PLBCDBE046332CBE70">robots</a> and gained my public speaking skills from presenting my science fair projects (2006 and 2007 International Science Fair 3rd and 4th place winner in Electrical Engineering, respectively).</p>
+			<p>My work style involves reading many research papers so we avoid reinventing the wheel. It involves deep collaboration and establishing <a target="blank" title="Harvard Business Review Article on teamwork"href="https://hbr.org/2017/08/high-performing-teams-need-psychological-safety-heres-how-to-create-it">psychological safety</a> between coworkers. I grow, share, and admit to my mistakes with my teammates. If you want a unified user experience, you have to have a unified team working towards a unified goal. I align our direction, make sure assumptions are agreed on, and stick to low fidelity design (paper and Balsamiq) as long as possible. I build Design Systems to set up the unified pattern library and vocabulary UX practioners and developers use. With each iteration, I balance our user (un)spoken needs, business strategy, time to implement, and technical restraints.</p>
+			<p>In 2017, I won YWCA Silicon Valley's <a target="blank" title="YouTube video of Sophia talking about the glass ceiling" href="https://youtu.be/PlyEjChTWB8?t=5m11s">Emerging Leader award.</a></p>
+		</div>
+
+		<div id="portfolio">
+			<h2>Portfolio</h2>
+			<p>I have worked at Synopsys and Coverity (Prior to being acquired by Synopsys) for 6 years because someone needs to make sure the world is a safer place with better software. I started out working with software static analysis but have now gotten to know more about software composition analysis (SCA) and fuzzing. I wish I could share all the work I've done to unify all these different aspects of software quality and security but it is not public.</p>
+			<p>I've coded up this site on my own. I believe it's important to understand the medium you work with.</p>
+
+			<div id="trafficLights">
+				<a title="Sophia's Portfolio Case Study from 2018: Traffic Lights " href="TrafficLights.html">Case Study (2018): Traffic Lights</a>
+			</div>
+
+			<div id="teamPage">
+				<a title="Sophia's Portfolio Case Study from 2018: Company Team Page " href="TeamPage.html">Case Study (2018): Company Team Page</a>
+			</div>
+
+		</div>
+
+	</div>
+
+
+	<!-- <img src="images/robot.jpg" class="robot" alt="robot" /> -->
 </body>
 </html>

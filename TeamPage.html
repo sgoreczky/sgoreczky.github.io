@@ -1,0 +1,75 @@
+<!--Hi! Yes, I did build this site, too! Knowing how the medium you design for works is important-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>Sophia Goreczky</title>
+	<link type= "text/css" rel="stylesheet" href="style/portfolio.css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-26005830-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
+
+</head>
+
+<body>
+	<p id="name">Sophia Goreczky</p>
+	<div id="navigation">
+		<a title="go home" href="index.html"><i class="fas fa-home"></i> back home</a>
+	</div>
+	<object class="svg" type="image/svg+xml" data="images/background-long.svg" style="width:100%">
+  	Your browser does not support SVGs
+	</object>
+
+	<div class="center blur">
+		<h2>Case Study: Company Team Page</h2>
+		<p>This is a case study for a company that has been anonymized and exercised visual design skillsets. I spent 1 day on this part of the project.</p>
+
+		<h3>Visual Design Challenge Statement</h3>
+		<p>Using the provided 15 headshots and titles, please construct a team page for the company's public website.</p>
+
+		<h3>Initial Research and Explorations</h3>
+		<p>This company works with autonomous vehicle providers so I know I need to look into existing car-related and autonomy-related sites. Looked at car sites (focused on selling cars therefore uninspiring, <a href="http://www.tri.global/">Toyota Research Institute</a> is closer to what the company is after), and DARPA grand challenge sites (a bit generic and academically focused). I am feeling very inspired by an article I read about the New York City subway system that <a href="https://www.nytimes.com/interactive/2018/05/09/nyregion/subway-crisis-mta-decisions-signals-rules.html">visualized delays</a> in a memorable and educational way.</p>
+		<p><span style=" font-weight: bold;">One of the first hurdles I identify in this challenge is that the provided headshots are of different sizes, angles, background colors, and zooms.</span> I know that in order to unify the team page, I'm going to remove the backgrounds of all 15 of these pictures. I get through manually removing the background of three pictures before realizing that machine learning has already solved this problem and there's a site that will do it for you. I upload the rest of the images and I'm set to begin.</p>
+
+		<p>The second hurdle I identify is that this company does not currently have a public facing site so <span style=" font-weight: bold;">I need to create a brand identity for them in order to complete this task.</span></p>
+
+		<h3>Iterations</h3>
+		<p>Working in Sketch, I start this challenge with the core problem: unify the team members in a scalable and responsive-friendly way. Team page usually use rectangles or circles for headshots and I wanted to think of something new. I choose hexagons because of their interlocking nature, an analogy I deeply strive for when it comes to teamwork.</p>
+		<a target="_blank" class="image" href="images/teampage/hexagonalTeam-large.png"><img class="image" src="images/teampage/hexagonalTeam.png" alt="Exploring hexagon formations" /></a>
+		<p>I want <span style=" font-weight: bold;">SVG animated cars</span> on this site. It fits with the brand image for this company and unexpected. Time to add some roadways. </p>
+		<a target="_blank" class="image" href="images/teampage/roadway.png"><img class="image" src="images/teampage/roadway.png" alt="Bringing in a road" /></a>
+		<h3>Design System</h3>
+		<p>There's a <a target="_blank" href="https://www.clarityconf.com/the-thing-is-design-systems-the-time-is-now/">great video</a> by Brad Frost that explains what design systems and atomic design are if you need more background on why they're important. <span style=" font-weight: bold;">This image isn't a good representation of a design system because it is static but is here to show that I designed this page with a design system thinking in mind.</span></p>
+		<a target="_blank" class="image" href="images/teampage/designSystem.png"><img class="image" src="images/teampage/designSystem.png" alt="Design System" /></a>
+		<p>Building a site in a unified and repeatable (design system driven) way makes for better user experiences, better team alignment, and faster iterations.</p>
+
+		<h3>Solution</h3>
+		<p>I wanted to create something lighter and cheekier than every other car or research site out there because I want the site to be more approachable to a larger set of people. Some people are afraid of autonomy ("they will take my job away" or "this is the beginning of the uprising" are popular phrases floating around). While these people not the direct customer base, starting the site inclusive to a larger population will make complex topics accessible to a larger crowd, jump starting the positive conversations about autonomy (Less traffic, reduced accidents, more time to read on your commute). While this company is not a autonomous vehicle company, it is still lumped into the same space - the more that can be done to make people more comfortable with the future envisioned, the better off the entire industry will be. </p>
+		<a target="_blank" class="image" href="images/teampage/desktopSolution.png"><img class="image" src="images/teampage/desktopSolution.png" alt="Desktop Solution" /></a>
+		<a target="_blank" class="image" href="images/teampage/mobileSolution-large.png"><img class="image" src="images/teampage/mobileSolution.png" alt="Mobile Solution" /></a>
+
+		<p>While on the site, <span style=" font-weight: bold;">these cars, whose colors are based on current autonomous vehicle companies, will animate along their roads</span>. The mobile solution below will reduce down to use the roads as section breaks and have a single lane of traffic. </p>
+
+		<h3>Specifications</h3>
+		<p>
+			<ul>
+				<li>All site content middle aligns on a white background.</li>
+				<li>Header (Logo with Navigation) might need to be sticky.</li>
+				<li>Cars should animate. It should be discussed if the cars should randomly animate or animate on scroll. Stick to SVGs and CSS animation will minimize browser load.<a target="_blank" href="https://www.nytimes.com/interactive/2018/05/09/nyregion/subway-crisis-mta-decisions-signals-rules.html">Example</a></li>
+				<li>Hex grid reflows responsively. Mocked up hex grid is not spacing on sub pixels correctly in Sketch so there are some spacing inconsistencies. Found <a target="_blank" href="https://github.com/substack/hex-grid">this package</a> to solve spacing and responsiveness for development.</li>
+				<li>Team member photos show name and linkedIn (if provided) on hover (web) or touch (mobile)</li>
+			</ul>
+		</p>
+	</div>
+
+
+</body>
+</html>

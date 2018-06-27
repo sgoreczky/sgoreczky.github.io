@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024px" height="828px" viewBox="0 0 1024 828" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-Copy-2" transform="translate(0.000000, -135.000000)">
+            <g id="Group-2" transform="translate(0.000000, 134.000000)">
+                <polygon id="Path-2" fill="#FFF0F0" points="4.65738384 0.943973841 291.803934 271.007081 1023.45765 76.1513196 291.803934 349.132681"></polygon>
+                <polygon id="Path-3" fill="#F7DFB9" points="0 828.46951 170.232891 594.252297 772.328 635.315081 1023.75767 357.206106 772.328 701.600077 170.232891 635.315081"></polygon>
+                <g id="Group" transform="translate(897.000000, 222.000000)" fill="#CDECF8">
+                    <circle id="Oval" cx="15" cy="60" r="15"></circle>
+                    <circle id="Oval" cx="16.5" cy="13.5" r="13.5"></circle>
+                    <circle id="Oval" cx="51" cy="45" r="9"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
