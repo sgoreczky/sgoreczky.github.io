@@ -1,63 +1,62 @@
 /******************************************************************************
  * Portfolio
  * author:      Sophia Goreczky
- * modified:    14 June 2018
  *****************************************************************************/
 
  /**********************
  * Formatting
  **********************/
 body{
-    background-color: #FFFFFF;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    margin: 0px;
+	background-color: #FFFFFF;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin: 0px;
 }
 
 p, ul{
 	font-size: 17px;
-  line-height: 25px;
+	line-height: 25px;
 }
 
 p#name{
 	font-family: Courier, Helvetica, sans-serif;
 	font-size: 36px;
-  text-align: center;
-  margin-bottom: 15px;
+	text-align: center;
+	margin-bottom: 15px;
 }
 
 #navigation{
-  text-align: center;
+	text-align: center;
 }
 
 .center{
-  width: 65%;
-  max-width: 800px;
-  margin: auto;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-align-content: center;
-  align-content: center;
+	width: 65%;
+	max-width: 800px;
+  	margin: auto;
+  	display: -webkit-flex;
+  	display: flex;
+  	-webkit-flex-wrap: wrap;
+  	flex-wrap: wrap;
+  	-webkit-align-content: center;
+  	align-content: center;
 }
 
 .blur{
-  padding: 10px;
-  background: rgba(255, 255, 255, 0.5);
+  	padding: 10px;
+  	background: rgba(255, 255, 255, 0.5);
 }
 
 .contact{
-  font-size: 2em;
+  	font-size: 2em;
 }
 
 /**********************
  * Images
  **********************/
 .image{
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin:auto;
+  	display: block;
+  	max-width: 100%;
+  	height: auto;
+  	margin:auto;
 }
 
  .robot{
@@ -65,14 +64,9 @@ p#name{
 	bottom: 0px;
 	width: 10%;
 	z-index: -1;
-  margin: auto;
+  	margin: auto;
 }
 
-.svg{
-  width:100%;
-  position: absolute;
-  z-index: -1;
-}
 /**********************
  * Responsive
  **********************/
@@ -125,8 +119,8 @@ p#name{
 		display: block;
 		position: relative;
 		width: 40%;
-    margin-left: auto;
-    margin-right: auto;
+    		margin-left: auto;
+   		 margin-right: auto;
 	}
 
 	a.contact{
@@ -135,21 +129,21 @@ p#name{
 		padding-right: 6px;
 	}
 
-  a.nav{
-    font-size: 60px;
-  }
+  	a.nav{
+    		font-size: 60px;
+  	}
 
-  .container{
-    margin-top:0px;
-  }
+  	.container{
+    		margin-top:0px;
+  	}
 
-  .sprite{
-    display: none;
-  }
+  	.sprite{
+    		display: none;
+  	}
 
 	#navigation{
 		position: relative;
-    height:100px;
+    		height:100px;
 	}
 
 	#main{
@@ -172,11 +166,11 @@ p#name{
 		position: relative;
 	}
 
-  p#name{
-    font-size: 60px;
-  }
+  	p#name{
+    		font-size: 60px;
+  	}
 
-  a.contact{
-   font-size: 50px;
- }
+  	a.contact{
+   		font-size: 50px;
+ 	}
 } */
