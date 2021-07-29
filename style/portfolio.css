@@ -51,7 +51,12 @@ nav{
 /**********************
  * Images
  **********************/
-
+.image{
+  	display: block;
+  	max-width: 100%;
+  	height: auto;
+  	margin:auto;
+}
  .robot{
 	display: block;
 	bottom: 0px;
