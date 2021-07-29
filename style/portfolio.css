@@ -12,14 +12,13 @@ body{
 	margin: 0px;
 }
 
-p, ul{
-	font-size: 17px;
-	line-height: 25px;
+p, ul, a{
+	font-size: 1.2em;
+	line-height: 1.5em;
 }
 
 header{
 	font-family: Courier, Helvetica, sans-serif;
-	font-size: 36px;
 	text-align: center;
 	margin: 15px;
 }
@@ -52,7 +51,7 @@ nav{
 /**********************
  * Images
  **********************/
-.image{
+/*.image{
   	display: block;
   	max-width: 100%;
   	height: auto;
@@ -65,7 +64,7 @@ nav{
 	width: 10%;
 	z-index: -1;
   	margin: auto;
-}
+}*/
 
 /**********************
  * Responsive
