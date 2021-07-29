@@ -17,14 +17,14 @@ p, ul{
 	line-height: 25px;
 }
 
-p#name{
+header{
 	font-family: Courier, Helvetica, sans-serif;
 	font-size: 36px;
 	text-align: center;
 	margin-bottom: 15px;
 }
 
-#navigation{
+nav{
 	text-align: center;
 }
 
